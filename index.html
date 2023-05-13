@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/rodape.css">
+</head>
+
+<body>
+    <main>
+
+        <section id="tabela">
+            <table class="tabela">
+                <tr>
+                    <td>
+                        <div id="containerDicaRaca">
+                            <div id="dicaRaca"><span></span></div>
+                        </div>
+                    </td>
+                    <th class="thHabilidades">Valor</th>
+                    <th class="thHabilidades">D20</th>
+                    <th class="thModificadores">MOD</th>
+                    <th class="thCusto">Total</th>
+                </tr>
+                <tr>
+                    <th>
+                        <span class="thMaior">FOR</span>
+                        <span class="thMenor">Força</span>
+                    </th>
+                    <td><input type="text" id="FOR_BASE" class="campoTabela for base"></td>
+                    <td><input type="text" id="for_d20" class="campoTabela for d20" disabled></td>
+                    <td><input type="text" id="for_mod" class="campoTabela for mod" disabled></td>
+                    <td><input type="text" id="FOR_TOTAL" class="campoTabela for custo" disabled></td>
+                </tr>
+                <tr>
+                    <th>
+                        <span class="thMaior">DES</span>
+                        <span class="thMenor">Destreza</span>
+                    </th>
+                    <td><input type="text" id="DES_BASE" class="campoTabela des base"></td>
+                    <td><input type="text" id="des_d20" class="campoTabela des d20" disabled></td>
+                    <td><input type="text" id="des_mod" class="campoTabela des mod" disabled></td>
+                    <td><input type="text" id="DES_TOTAL" class="campoTabela des custo" disabled></td>
+                </tr>
+                <tr>
+                    <th>
+                        <span class="thMaior">CON</span>
+                        <span class="thMenor">Constituição</span>
+                    </th>
+                    <td><input type="text" id="CON_BASE" class="campoTabela con base"></td>
+                    <td><input type="text" id="con_d20" class="campoTabela con d20" disabled></td>
+                    <td><input type="text" id="con_mod" class="campoTabela con mod" disabled></td>
+                    <td><input type="text" id="CON_TOTAL" class="campoTabela con custo" disabled></td>
+                </tr>
+                <tr>
+                    <th>
+                        <span class="thMaior">INT</span>
+                        <span class="thMenor">Inteligência</span>
+                    </th>
+                    <td><input type="text" id="INT_BASE" class="campoTabela int base"></td>
+                    <td><input type="text" id="int_d20" class="campoTabela int d20" disabled></td>
+                    <td><input type="text" id="int_mod" class="campoTabela int mod" disabled></td>
+                    <td><input type="text" id="INT_TOTAL" class="campoTabela int custo" disabled></td>
+                </tr>
+                <tr>
+                    <th>
+                        <span class="thMaior">SAB</span>
+                        <span class="thMenor">Sabedoria</span>
+                    </th>
+                    <td><input type="text" id="SAB_BASE" class="campoTabela sab base"></td>
+                    <td><input type="text" id="sab_d20" class="campoTabela sab d20" disabled></td>
+                    <td><input type="text" id="sab_mod" class="campoTabela sab mod" disabled></td>
+                    <td><input type="text" id="SAB_TOTAL" class="campoTabela sab custo" disabled></td>
+                </tr>
+                <tr>
+                    <th>
+                        <span class="thMaior">CAR</span>
+                        <span class="thMenor">Carisma</span>
+                    </th>
+                    <td><input type="text" id="CAR_BASE" class="campoTabela car base"></td>
+                    <td><input type="text" id="car_d20" class="campoTabela car d20" disabled></td>
+                    <td><input type="text" id="car_mod" class="campoTabela car mod" disabled></td>
+                    <td><input type="text" id="CAR_TOTAL" class="campoTabela car custo" disabled></td>
+                </tr>
+            </table>
+        </section>
+        <section id="botoes">
+            <div>
+                <input class="calcular" type="button" value="Calcular" id="calcular">
+                <input class="calcular" type="button" value="Rodar dado" id="dado">
+                <input class="resetar" type="button" value="Resetar" id="resetar">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="caixaFooter">Desenvolvido por <a href="" target="_blank">Aluno Ctrl+Play</a>.
+        </div>
+    </footer>
+    <script src="JavaScript\script.js"></script>
+</body>
+
+</html>

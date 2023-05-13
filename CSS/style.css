@@ -1,0 +1,433 @@
+@import url('https://fonts.googleapis.com/css?family=Khula:400,600,700&subset=devanagari,latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600&subset=latin-ext');
+
+html,
+body {
+    font-family: open sans, sans-serif !important;
+    font-size: 100%
+}
+
+html {
+    background-image: url(../img/bg.jpg);
+    background-attachment: fixed;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-color: #d7c4a3;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+main {
+    background-color: transparent !important;
+    width: 35rem;
+    margin: 8rem auto;
+    text-align: center;
+}
+
+.tabela {
+    border-spacing: .4rem;
+    border-collapse: separate;
+    margin-top: .2rem
+}
+
+th {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #d1ba91;
+    background-color: #2b2720;
+    min-height: 2.5rem;
+    width: auto;
+    padding-top: .4rem;
+    padding-bottom: .4rem;
+    min-width: 4rem;
+    text-align: center !important
+}
+
+
+.thTotal {
+    background-color: #171511
+}
+
+.thModificadores {
+    border: 2px solid #2b2720;
+    color: #2b2720;
+    width: 4rem;
+    background-color: #fde9c6;
+    box-sizing: border-box
+}
+
+.thHabilidades,
+.thRaca,
+.thBonus,
+.thNivel,
+.thTotal,
+.thModificadores {
+    padding-top: .8rem;
+    padding-bottom: .8rem;
+    font-size: .8rem
+}
+
+th span {
+    display: block
+}
+
+.thMenor {
+    font-size: .5rem;
+    line-height: .5rem;
+    color: #baa277
+}
+
+.campoTabela {
+    width: 4rem;
+    height: 2.5rem;
+    background-color: rgba(229, 210, 176, .4);
+    box-sizing: border-box;
+    color: #2b2720;
+    border: 2px solid #2b2720;
+    text-align: center;
+    line-height: 2.4rem;
+    font-size: 1rem;
+    font-weight: 700
+}
+
+input:focus {
+    border: 2px solid #6b4c2c;
+    color: #6b4c2c;
+    outline: none
+}
+
+.mod {
+    background-color: rgba(253, 233, 198, .6) !important
+}
+
+.thCusto {
+    padding-top: .8rem;
+    padding-bottom: .8rem;
+    font-size: .8rem;
+    color: #e5d2b0 !important;
+    font-weight: 100;
+    box-sizing: border-box;
+    background-color: #6a0015 !important
+}
+
+.custo {
+    border-top: 0 solid transparent !important;
+    border-right: 0 solid transparent !important;
+    border-left: 0 solid transparent !important;
+    border-bottom: 2px solid #6a0015;
+    color: #6a0015;
+    font-weight: 100 !important;
+    box-sizing: border-box;
+    background-color: transparent !important;
+    height: 2.3rem
+}
+
+#barraSuperior {
+    font-size: 100%;
+    text-align: right;
+    height: 4rem;
+    width: 26.5rem
+}
+
+#menuRacas {
+    width: 12rem;
+    float: right;
+    height: 2.5rem
+}
+
+#menuRacas span {
+    display: block;
+    text-align: center
+}
+
+#menuRacas span select {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    height: 2.5rem;
+    color: #171511;
+    border: solid 2px #171511;
+    background-color: #e5d2b0;
+    width: 12rem;
+    padding-left: .6rem;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    overflow: auto
+}
+
+.tituloRacas {
+    background-color: #171511 !important;
+    color: #e5d2b0 !important;
+    line-height: 1.5rem;
+    font-size: .8rem;
+    height: 1.5rem;
+    width: 12rem
+}
+
+#contagemDePontos {
+    float: right;
+    margin-left: .4rem;
+    width: 4rem
+}
+
+.tituloPontos {
+    background-color: #6a0015 !important;
+    display: block;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    text-align: center;
+    color: #e5d2b0 !important;
+    line-height: 1.5rem;
+    font-size: .8rem;
+    height: 1.5rem;
+    width: 4rem
+}
+
+.valorPontos {
+    display: block;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    height: 2.5rem;
+    font-weight: 700;
+    font-size: 1.6rem;
+    text-align: center;
+    line-height: 2.3rem;
+    color: #6a0015;
+    border: 2px solid #6a0015
+}
+
+.styled-dropdown {
+    border: solid 2px #171511;
+    background-color: #e5d2b0;
+    color: #000;
+    height: 2.5rem;
+    cursor: pointer;
+    box-sizing: border-box;
+    line-height: 2.5rem;
+    position: relative;
+    width: 12rem !important
+}
+
+.styled-dropdown p {
+    height: 2.5rem;
+    line-height: 2.5rem;
+    padding: 0 0 0 3px;
+    width: 12rem;
+    margin: 0
+}
+
+ul.dropdown-lista {
+    border: solid 2px #171511;
+    background-color: #e5d2b0;
+    box-sizing: border-box;
+    color: #000;
+    cursor: pointer;
+    float: left;
+    left: -.1rem;
+    line-height: 2rem;
+    list-style: none outside none;
+    margin: 0;
+    height: 25rem;
+    font-size: .8rem;
+    padding: 0;
+    position: absolute;
+    overflow: auto;
+    width: 12rem;
+    z-index: 10
+}
+
+ul.dropdown-lista li {
+    background-color: #e5d2b0;
+    padding: 0 0 0 3px;
+    box-sizing: border-box;
+    border-bottom: solid 1px #171511
+}
+
+ul.dropdown-lista li:last-child {
+    background-color: #6a0015;
+    color: #d1ba91;
+    border: 0
+}
+
+ul.dropdown-lista li:last-child:hover {
+    background-color: #47000e;
+    color: #fff;
+    border: 0
+}
+
+ul.dropdown-lista li:hover {
+    background: #2b2720;
+    color: #d1ba91
+}
+
+ul.dropdown-lista::-webkit-scrollbar {
+    width: .6rem
+}
+
+ul.dropdown-lista::-webkit-scrollbar-track {
+    background-color: #e5d2b0;
+    border-left: 1px solid #171511;
+    box-sizing: border-box
+}
+
+ul.dropdown-lista::-webkit-scrollbar-thumb {
+    background-color: #2b2720
+}
+
+#containerDicaRaca {
+    position: relative;
+    width: 1px;
+    height: 1px;
+    box-sizing: border-box
+}
+
+#dicaRaca {
+    width: 10rem;
+    height: 3rem;
+    top: -5.2rem;
+    left: 5.8rem;
+    background-color: #6a0015;
+    position: relative;
+    z-index: 3;
+    font-size: .7rem;
+    color: #e5d2b0;
+    text-align: justify;
+    display: none
+}
+
+#dicaRaca span {
+    position: absolute;
+    width: 8rem;
+    height: 2rem;
+    top: .5rem;
+    left: 1rem;
+    display: block;
+    z-index: 5
+}
+
+#dicaRaca::after {
+    position: absolute;
+    content: "";
+    bottom: -.3rem;
+    left: 4.5rem;
+    background-color: #6a0015;
+    z-index: 2;
+    width: 1rem;
+    height: 1rem;
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg)
+}
+
+.textoCheckbox {
+    font-size: .7rem;
+    text-transform: uppercase;
+    font-style: italic;
+    line-height: 1.2rem;
+    float: left
+}
+
+#foraDoIntervalo {
+    float: left;
+    margin-left: 1rem
+}
+
+.alerta {
+    width: 26rem;
+    height: 15rem;
+    background-color: #e5d2b0;
+    border: solid 2px #171511;
+    box-shadow: .4rem .6rem 40rem 40rem rgba(0, 0, 0, .5);
+    position: absolute;
+    top: 16rem;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 100;
+    display: none
+}
+
+.alertaTitulo {
+    display: block;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #e5d2b0;
+    margin: 0 auto;
+    height: 2rem;
+    margin-top: 1rem;
+    margin-bottom: .8rem;
+    line-height: 2rem;
+    width: 24rem;
+    text-align: center;
+    background-color: #171511
+}
+
+.alertaTexto {
+    display: block;
+    margin: 0 auto;
+    box-sizing: border-box;
+    text-align: justify !important;
+    line-height: 1rem;
+    width: 24rem;
+    font-size: .9rem;
+    padding-bottom: .4rem
+}
+
+.alertaTexto b {
+    font-weight: 700
+}
+
+.alertaTexto i {
+    font-style: italic
+}
+
+.alertaBotao {
+    display: block;
+    font-weight: 700;
+    text-align: center;
+    background-color: #171511;
+    width: 6rem;
+    line-height: 2rem;
+    font-size: 1.2rem;
+    color: #e5d2b0;
+    height: 2rem;
+    margin: 0 auto;
+    cursor: pointer
+}
+
+.alertaBotão:hover {
+    background-color: #2b2720
+}
+
+.containerAlertaBotao {
+    text-align: center;
+    width: 24rem
+}
+
+#botoes {
+    display: flex;
+    justify-content: left;
+    padding-left: 6px;
+}
+
+.calcular,
+.resetar {
+    text-transform: uppercase;
+    color: #d1ba91;
+    background-color: #2b2720;
+    min-height: 2.5rem;
+    width: auto;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+    min-width: 4rem;
+    text-align: center !important;
+}
