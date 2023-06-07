@@ -89,7 +89,7 @@ function modificador(numeros_aleatorios)
         } else if (valor > 7) {
             mod[i] = (0 + (valor / 1.2)).toFixed(0);
         } else {
-            mod[i] = Math.round(-1 + (valor / 1.2));
+            mod[i] = Math.round(-1 + (valor / 0.8));
         }
     }
     forMod.value = mod[0];
